@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="%PUBLIC_URL%/citadel.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelter Vibes Homes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <div class="bg-primary">
+        <nav class="navbar py-2 navbar-expand-md">
+          <div class="container py-0">
+            <a class="navbar-brand" href="/">
+              <img
+                src="./assets/img/citadel.svg"
+                alt="Logo"
+                class="custom-logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#basic-navbar-nav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="basic-navbar-nav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/properties">Properties</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <button
+                    onclick="connectWalletAction()"
+                    class="btn btn-light cus-login fw-semibold"
+                  >
+                    Login/Sign up
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div
+            class="carousel-item carousel-item1 active"
+            data-bs-interval="10000"
+          >
+            <!-- <h1>hello world</h1> -->
+            <!-- <img src="" class="d-block w-100" alt="Slide1" /> -->
+          </div>
+          <div
+            class="carousel-item carousel-item2"
+            data-bs-interval="2000"
+          ></div>
+          <div class="carousel-item carousel-item3"></div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <div class="container py-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <h2>The Best Way To Find Your Home</h2>
+          <p>
+            Help your visitors find the right property by letting them set
+            various search criteria
+          </p>
+        </div>
+        <form
+          action=""
+          class="my-3 row justify-content-center items-center align-items-center"
+        >
+          <div class="col-lg-3 col-xsm-1 my-2">
+            <input
+              class="form-control py-3"
+              type="text"
+              placeholder="Enter Keyword..."
+            />
+          </div>
+
+          <div class="col-lg-2 my-2">
+            <input class="form-control py-3" type="text" placeholder="Status" />
+          </div>
+          <div class="col-lg-2 my-2">
+            <input class="form-control py-3" type="text" placeholder="Type" />
+          </div>
+          <div class="col-lg-2 my-2">
+            <input
+              class="form-control py-3"
+              type="text"
+              placeholder="Bedrooms"
+            />
+          </div>
+          <div class="col-lg-2 my-2">
+            <input
+              class="form-control py-3"
+              type="text"
+              placeholder="Bathrooms"
+            />
+          </div>
+          <div class="col-lg-2 my-2">
+            <input
+              class="form-control py-3"
+              type="text"
+              placeholder="All Cities"
+            />
+          </div>
+          <div class="col-lg-2 my-2">
+            <input
+              class="form-control py-3"
+              type="text"
+              placeholder="Min. Price"
+            />
+          </div>
+          <div class="col-lg-3 my-2">
+            <input
+              class="form-control py-3"
+              type="text"
+              placeholder="Max. Price"
+            />
+          </div>
+
+          <div class="col-lg-3 my-2">
+            <button class="btn btn-secondary w-100 py-3" type="submit">
+              Search
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="bg-light">
+      <div class="container py-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-lg-center"
+        >
+          <h2 class="text-center">Our Featured Properties</h2>
+          <p class="text-center">
+            Create property listings with all the features you’d expect
+          </p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center">
+          <!-- New Card -->
+          <div class="card m-3" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="./assets/img/featured-img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Contemporary apartment</h5>
+              <p class="card-text d-flex justify-content-between">
+                <span>Price:</span>
+                <span>$3,600/mo</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card m-3" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="./assets/img/featured-img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Contemporary apartment</h5>
+              <p class="card-text d-flex justify-content-between">
+                <span>Price:</span>
+                <span>$3,600/mo</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card m-3" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="./assets/img/featured-img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Contemporary apartment</h5>
+              <p class="card-text d-flex justify-content-between">
+                <span>Price:</span>
+                <span>$3,600/mo</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card m-3" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="./assets/img/featured-img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Contemporary apartment</h5>
+              <p class="card-text d-flex justify-content-between">
+                <span>Price:</span>
+                <span>$3,600/mo</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card m-3" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="./assets/img/featured-img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Contemporary apartment</h5>
+              <p class="card-text d-flex justify-content-between">
+                <span>Price:</span>
+                <span>$3,600/mo</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="card m-3" style="width: 20rem">
+            <img
+              class="card-img-top"
+              src="./assets/img/featured-img.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Contemporary apartment</h5>
+              <p class="card-text d-flex justify-content-between">
+                <span>Price:</span>
+                <span>$3,600/mo</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center">
+          <button class="btn btn-white border-secondary border-2">
+            Load More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real Estate Agents -->
+    <section class="agents">
+      <div class="container py-5">
+        <div
+          class="container my-5 d-flex flex-wrap flex-column justify-content-center align-items-center"
+        >
+          <div class="text-center">
+            <h2 class="text-white">Meet Our Real Estate Agents</h2>
+            <p class="text-light">
+              Provide your sales agents with attractive profile pages where they
+              can display their contact info and listings
+            </p>
+          </div>
+          <div class="card m-3 p-2 border-0 bg-white" style="width: 17rem">
+            <img
+              class="card-img-top rounded-circle"
+              src="./assets/img/news.png"
+              alt="Card image cap"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Samuel Palmer</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                mollis et sem sed sollicitudin. Donec...
+              </p>
+              <a href="#" class="btn fw-semibold text-primary">View profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
