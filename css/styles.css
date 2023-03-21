@@ -2,6 +2,10 @@
   background: #22687e !important;
 }
 
+.bg-light {
+  background: #d9d9d9 !important;
+}
+
 .text-primary {
   color: #22687e !important;
 }
@@ -44,8 +48,8 @@ nav .nav-link {
 }
 
 .cus-login:hover {
-  background-color: #174f60;
-  color: #fff;
+  background-color: #aadeed;
+  color: #22687e;
 }
 
 /* Slides */

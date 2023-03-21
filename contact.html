@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/citadel.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelter Vibes Homes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <div class="bg-primary">
+        <nav class="navbar py-2 navbar-expand-md">
+          <div class="container py-0">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="./assets/img/citadel.svg"
+                alt="Logo"
+                class="custom-logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#basic-navbar-nav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="basic-navbar-nav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="properties.html">Properties</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <button
+                    onclick="connectWalletAction()"
+                    class="btn btn-light cus-login fw-semibold"
+                  >
+                    Login/Sign up
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="bg-light">
+      <div class="container py-lg-5">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 card p-3">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum.
+            </p>
+            <form>
+              <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 my-2">
+                  <input
+                    type="text"
+                    class="form-control py-3"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="col-lg-6 my-2">
+                  <input
+                    type="text"
+                    class="form-control py-3"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+
+              <div class="my-2">
+                <input
+                  type="email"
+                  class="form-control py-3"
+                  placeholder="Email"
+                />
+              </div>
+
+              <div class="my-2">
+                <textarea
+                  class="form-control h-75"
+                  placeholder="Enter your message here"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="my-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Check" />
+                  <label class="form-check-label" for="Check">
+                    Do you agree to our terms and services?
+                  </label>
+                </div>
+              </div>
+
+              <div class="w-100">
+                <button class="btn btn-secondary w-100 py-3">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Address -->
+          <div class="col-lg-4">
+            <div class="card p-2 m-3">
+              <h4 class="fw-bold">For inquiries contact</h4>
+              <div class="px-1">
+                <h6>Brenda</h6>
+                <p>
+                  No.16 Uqua RD. Eket,
+                  <br />
+                  Akwa Ibom State, <br />
+                  Nigeria
+                </p>
+              </div>
+              <div class="px-1">
+                <h6>Brenda</h6>
+                <p>
+                  No.16 Uqua RD. Eket,
+                  <br />
+                  Akwa Ibom State, <br />
+                  Nigeria
+                </p>
+              </div>
+            </div>
+            <div class="card p-2 m-3">
+              <h4 class="fw-bold">Corporate Headquarters</h4>
+              <div class="px-1">
+                <h6>Akwa Ibom State University</h6>
+                <p>
+                  532111, Ikot Akpaden,
+                  <br />
+                  Akwa Ibom State, <br />
+                  Nigeria
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+      <div class="container-fluid bg-primary py-5">
+        <div class="container text-white">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <a href="/" class="mb-5 logo">
+                <img
+                  src="./assets/img/citadel.svg"
+                  alt="Logo"
+                  class="custom-logo"
+                />
+              </a>
+              <div class="mt-5 pt-5 d-flex">
+                <a href="#" class="nav-link px-2">
+                  <!-- <FontAwesomeIcon icon={faFacebook} /> -->
+                </a>
+                <a href="#" class="nav-link px-2">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="nav-link px-2">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div class="py-">
+                <p><i class="fas fa-copyright"></i> 2023 Citadel</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+              <a href="#" class="nav-link">
+                <h4 class="fw-semibold">Community</h4>
+              </a>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Landlord </a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Discord </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+              <a href="#" class="nav-link">
+                <h4 class="fw-semibold">Places</h4>
+              </a>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Castle </a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Farm </a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Beach </a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Learn more </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+              <a href="#" class="nav-link">
+                <h4 class="fw-semibold">About Us</h4>
+              </a>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Road map </a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Creators </a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Career </a>
+              </div>
+              <div class="py-1">
+                <a href="#" class="nav-link"> Contact Us </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
